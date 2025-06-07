@@ -5,6 +5,7 @@ This document contains additional methods and techniques implemented in the proj
 * Game randomization
 * Dynamic-sized replay buffer
 * Gradient accumulation
+* Action space pruning
 * Monte-Carlo Graph Search
 * Playout Cap Randomization
 * Forced Playouts and Policy Target Pruning
