@@ -12,12 +12,12 @@ katac4/
 ├── weights/         # Model checkpoints for each training run
 │
 ├── docs/            # Documentation files
-│   ├── methods.md   # Overview of improvements over original AlphaZero
+│   └── methods.md    # Overview of improvements over original AlphaZero
 │
 ├── saiblo/          # Saiblo Connect4 submission package
-│   ├── main.py      # Entry point
-│   ├── game.py      # Standalone game environment (with zobrist hash)
-│   └── search.py    # Monte Carlo Graph Search, used during online play
+│   ├── main.py       # Entry point
+│   ├── game.py       # Standalone game environment (with zobrist hash)
+│   └── search.py     # Monte Carlo Graph Search, used during online play
 │
 ├── train.py         # Main training script
 ├── model.py         # Neural network model definition (b3c128nbt)
