@@ -28,14 +28,14 @@ katac4/
 ├── elo_plot.py      # Plots ELO rating progression
 ├── export_model.py  # Converts model to TorchScript for deployment
 ├── benchmark.py     # Benchmarks model performance
-├── human_play.py    # Allows human interaction with the model
+└── human_play.py    # Allows human interaction with the model
 ```
 
 ## Quick Start
 
 ### Self-Play Training
 
-Before running the training script, you may want to adjust a few parameters in `train.py`:
+Before starting self-play training, you may want to adjust a few parameters in `train.py`:
 
 * `epochs`: Total number of training epochs
 * `epoch_size`: Number of self-play games per epoch
@@ -71,6 +71,10 @@ Models will compete in randomized pairings, with results saved to `elo.json`. To
 ```bash
 python3 elo_plot.py
 ```
+
+> [!NOTE]
+>
+> The ELO evaluation process is computationally intensive. For reference, the most recent evaluation was based on approximately 70,000 games and required 2.5 days to complete on four RTX 4090 GPUs.
 
 ### Submitting to Saiblo
 
